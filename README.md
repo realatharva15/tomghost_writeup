@@ -82,11 +82,11 @@ now we find two interesting files named credential.pgp and tryhackme.asc. we imm
 
 ```bash
 #on your attacker machine:
-scp skyfuck@10.81.136.212:tryhackme.asc .
+scp skyfuck@<target_ip>:tryhackme.asc .
 ```
 ```bash
 #after the above file gets transfered, transfer this aswell
-scp skyfuck@10.81.136.212:credential.pgp .
+scp skyfuck@<target_ip>:credential.pgp .
 ```
 
 now since the .pgp and .asc files need to be decrypted and imported respectively using a passphrase, we will bruteforce it using john the ripper. so inorder to do that we will have to create a hash file out of the .asc file for the bruteforce to take place.
