@@ -111,7 +111,7 @@ gpg --import tryhackme.asc
 
 ```bash
 #after the .asc file is imported, we will decrypt the .pgp file
-gpg --import credential.pgp
+gpg --decrypt credential.pgp
 ```
 
 you will get a prompt to enter the passphrase after typing both these commands, so enter these commands after importing and decrpting. the momnent you decrypt the credential.pgp file, you will get the credentials for the user marlin. now we can access the shell as marlin and escalate our privileges even further.
