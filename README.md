@@ -76,7 +76,7 @@ we use these credentials to login the ssh server
 ssh skyfuck@<target_ip>
 ```
 
-# Shell as merlin:
+# Shell as marlin:
 
 now we find two interesting files named credential.pgp and tryhackme.asc. we immediately transfer these to my attacker machine in order to analyse them better.
 
@@ -114,7 +114,7 @@ gpg --import tryhackme.asc
 gpg --decrypt credential.pgp
 ```
 
-you will get a prompt to enter the passphrase after typing both these commands, so enter these commands after importing and decrpting. the momnent you decrypt the credential.pgp file, you will get the credentials for the user marlin. now we can access the shell as marlin and escalate our privileges even further.
+you will get a prompt to enter the passphrase after typing both these commands, so enter the password one after another. make sure that you import the .asc file first and then decrypt the .pgp file. the moment you decrypt the credential.pgp file, you will get the credentials for the user marlin. now we can access the shell as marlin and escalate our privileges even further.
 
 marlin:< REDACTED >
 
