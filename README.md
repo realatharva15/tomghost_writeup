@@ -2,7 +2,7 @@
 # Author: Atharva Bordavekar
 # Difficulty: Easy
 # Points: 210
-# Vulnerabilities:
+# Vulnerabilities: File inclusion (CVE-2020-1938), weak .asc & .pgp file passphrase, SUDO exploitation
 
 
 
@@ -116,12 +116,14 @@ gpg --import credential.pgp
 
 you will get a prompt to enter the passphrase after typing both these commands, so enter these commands after importing and decrpting. the momnent you decrypt the credential.pgp file, you will get the credentials for the user marlin. now we can access the shell as marlin and escalate our privileges even further.
 
-marlin:<REDACTED>
+marlin:< REDACTED >
 
 ```bash
 su marlin
 #enter the password when prompted
 ```
+now we read the user.txt flag as merlin and then submit it.
+
 # Privilege Escalation (B):
 
 now we have a shell as marlin. now lets find if marlin has any sudo access over any commands.
