@@ -1,7 +1,7 @@
 # Try Hack Me - tomghost
 # Author: Atharva Bordavekar
 # Difficulty: Easy
-# Points: 200
+# Points: 210
 # Vulnerabilities:
 
 
@@ -75,7 +75,7 @@ ssh skyfuck@<target_ip>
 ```
 
 
-now we find two interesting files named credential.pgp and tyrhackme.asc. we immediately transfer these to my attacker machine in order to analyse them better.
+now we find two interesting files named credential.pgp and tryhackme.asc. we immediately transfer these to my attacker machine in order to analyse them better.
 
 ```bash
 #on your attacker machine:
