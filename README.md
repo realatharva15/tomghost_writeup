@@ -65,7 +65,9 @@ exploit
 
 and there we go, we find some user credetnials which must be for the ssh server.
 
-skyfuck:<REDACTED>
+# Shell as skyfuck:
+
+skyfuck: < REDACTED >
  
 woah nice username. sky must me the limit for someone ;)
 we use these credentials to login the ssh server
@@ -74,6 +76,7 @@ we use these credentials to login the ssh server
 ssh skyfuck@<target_ip>
 ```
 
+# Shell as merlin:
 
 now we find two interesting files named credential.pgp and tryhackme.asc. we immediately transfer these to my attacker machine in order to analyse them better.
 
@@ -119,6 +122,8 @@ marlin:<REDACTED>
 su marlin
 #enter the password when prompted
 ```
+# Privilege Escalation (B):
+
 now we have a shell as marlin. now lets find if marlin has any sudo access over any commands.
 
 ```bash
